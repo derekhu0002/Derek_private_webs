@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>我们一起来做</title>
+</head>
+
+<body>
+<p>让我们一起来建设本站点吧！</p>
+<hr />
+<p>本站搭建了简单的持续集成开发环境，凡是成为本站开发团队中的一员，均可以查看和修改本站点的所有代码和资源，请参照以下帮助来进行开发：</p>
+<p>本持续集成开发环境分为两部份：</p>
+<p>1、代码和资源的修改和提交；-即对版本库的下载和提交；</p>
+<p>2、站点资源布署；-即对运行库的下载和提交；</p>
+<p>声明：凡参于本站开发人员，在将自己的开发结果提交到运行库上时，必须同时将源码提交至版本库中；</p>
+<p>请参看以下帮助来进行开发工作：</p>
+<p>一、开发环境的搭建：</p>
+<p>1、TOMCAT开发环境搭建请参照：<a href="http://112.74.75.39:8080/webdevelop/tomcat.html">http://112.74.75.39:8080/webdevelop/tomcat.html</a></p>
+<p>2、安装WINDOWS端SVN客户端：TortoiseSVN-1.8.10.26129-win32-svn-1.8.11.1420009704.msi（注：所有需要的工具都在版本库中的/tools下面，请自行获取）</p>
+<p>二、使用SVN下载站点版本库：svn://112.74.75.39/webapps_sources,用户名与密码请与我联系，确认成为开发团队成员后进行分配；</p>
+<p>三、使用SVN下载站点运行库：svn://112.74.75.39/webapps_runtimes,用户名与密码请与我联系，确认成为开发团队成员后进行分配；</p>
+<p>四、对库中已有站点，可以进行修改和提交，提交成功后服务器自动重新布署生效，即可以通过相应的地址进行访问查看修改后的页面；</p>
+<p>五、可以在本地新建一个站点，完成后，提交至运行库中，服务器自动进行布署生效，即可以通过相应的地址进行访问查看修改后的页面；</p>
+<p>此帮助先简单写这么多，后续补充。。。。。。。。。。。</p>
+<p>&nbsp;</p>
+</body>
+
+
+
+</html>

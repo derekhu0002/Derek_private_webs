@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Arduino Pro Mini</title>
+</head>
+
+<body>
+<h1 id="firstHeading">Arduino Pro Mini</h1>
+<div id="bodyContent">
+  <div id="contentSub"></div>
+  <table id="toc">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><span id=".E7.AE.80.E4.BB.8B">简介</span></h2>
+  <p>Arduino ProMini是Arduino Mini的半定制版本，所有外部引脚通孔没有焊接，与Mini版本管脚兼容。Arduino ProMini的处理器核心是<a href="http://kb.open.eefocus.com/index.php/ATmega168" title="ATmega168">ATmega168</a>，同时具有14路数字输入/输出口（其中6路可作为PWM输出），6路模拟输入，一个晶体谐振，一个复位按钮。有两个版本：</p>
+  <ul>
+    <li>工作在3.3V和8MHz时钟</li>
+    <li>工作在5V和16MHz时钟</li>
+  </ul>
+  <p><br>
+    <a href="http://kb.open.eefocus.com/index.php/%E6%96%87%E4%BB%B6:ArduinoProMini.jpg"><img alt="ArduinoProMini.jpg" src="http://kb.open.eefocus.com/images/e/e0/ArduinoProMini.jpg" width="400" height="225"></a></p>
+  <h2><span id=".E6.A6.82.E8.A6.81">概要</span></h2>
+  <ul>
+    <li>处理器 ATmega168</li>
+    <li>工作电压 3.3V or 5V</li>
+    <li>输入电压 3.35V-12V or 5-12V</li>
+    <li>数字IO脚 14 (其中6路作为PWM输出）</li>
+    <li>模拟输入脚 6</li>
+    <li>IO脚直流电流 40 mA</li>
+    <li>Flash Memory 16 KB （其中2 KB 用于 bootloader）</li>
+    <li>SRAM 1 KB （ATmega328）</li>
+    <li>EEPROM 0.5 KB （ATmega328）</li>
+    <li>工作时钟 8 MHz or 16 MHz</li>
+  </ul>
+  <h2><span id=".E7.94.B5.E8.B7.AF.E5.9B.BE.E5.92.8CPCB">电路图和PCB</span></h2>
+  <ul>
+    <li>电路图?<a href="http://arduino.cc/en/uploads/Main/Arduino-Pro-Mini-schematic.pdf" rel="nofollow">http://arduino.cc/en/uploads/Main/Arduino-Pro-Mini-schematic.pdf</a></li>
+    <li>硬件设计文件（Eagle文件）?<a href="http://arduino.cc/en/uploads/Main/arduino-pro-mini-reference-design.zip" rel="nofollow">http://arduino.cc/en/uploads/Main/arduino-pro-mini-reference-design.zip</a></li>
+  </ul>
+  <h2><span id=".E7.94.B5.E6.BA.90">电源</span></h2>
+  <p>Arduino ProMini可以通过FTDI线或者焊接6脚Header，也可以通过电源引脚接入外部直流电源。 电源引脚说明</p>
+  <ul>
+    <li>RAW --- 外部直流电源接入引脚，raw代表接入的可以是电池或者其他直流电源。</li>
+    <li>VCC --- 通过稳压器产生的3.3V或者5V电压。</li>
+    <li>GND --- 地脚。</li>
+  </ul>
+  <h2><span id=".E5.AD.98.E5.82.A8.E5.99.A8">存储器</span></h2>
+  <p><a href="http://kb.open.eefocus.com/index.php/ATmega168" title="ATmega168">ATmega168</a>包括了片上16KB Flash，其中2KB用于Bootloader。同时还有1KB SRAM和0.5KB EEPROM。</p>
+  <h2><span id=".E8.BE.93.E5.85.A5.E8.BE.93.E5.87.BA">输入输出</span></h2>
+  <ol>
+    <li>14路数字输入输出口：工作电压为3.3V或者5V，每一路能输出和接入最大电流为40mA。每一路配置了20-50K欧姆内部上拉电阻（默认不连接)。除此之外，有些引脚有特定的功能
+        <ul>
+          <li>串口信号RX（0号）、TX（1号）: 提供TTL电压水平的串口接收信号，可以与6脚Header通孔相连。</li>
+          <li>外部中断（2号和3号）：触发中断引脚，可设成上升沿、下降沿或同时触发。</li>
+          <li>脉冲宽度调制PWM（3、5、6、9、10 、11）：提供6路8位PWM输出。</li>
+          <li>SPI（10(SS)，11(MOSI)，12(MISO)，13(SCK)）：SPI通信接口。</li>
+          <li>LED（13号）：Arduino专门用于测试LED的保留接口，输出为高时点亮LED，反之输出为低时LED熄灭。</li>
+        </ul>
+    </li>
+    <li>6路模拟输入A0到A5：每一路具有10位的分辨率（即输入有1024个不同值），默认输入信号范围为0到5V，可以通过AREF调整输入上限。除此之外，有些引脚有特定功能
+        <ul>
+          <li><a href="http://kb.open.eefocus.com/index.php?title=TWI&action=edit&redlink=1" title="TWI（尚未撰写）">TWI</a>接口（SDA A4和SCL A5）：支持通信接口（兼容I2C总线）。</li>
+        </ul>
+    </li>
+    <li>Reset：信号为低时复位单片机芯片。</li>
+  </ol>
+  <h2><span id=".E9.80.9A.E4.BF.A1.E6.8E.A5.E5.8F.A3">通信接口</span></h2>
+  <ol>
+    <li>串口：ATmega168内置的UART可以通过数字口0（RX）和1（TX）与外部实现串口通信</li>
+    <li>TWI（兼容I2C）接口：</li>
+    <li>SPI 接口：</li>
+  </ol>
+  <h2>IDE构建</h2>
+  <p>在进行IDE构建时，请选择Board和Processor如下图：</p>
+  <p><img src="images/arduinoMiniIDE.JPG" width="535" height="525"></p>
+  <p>点击verify即可进行编译：</p>
+  <p><img src="images/arduinoMiniIDE_verify.JPG" width="200" height="200"></p>
+  <h2><span id=".E4.B8.8B.E8.BD.BD.E7.A8.8B.E5.BA.8F">下载程序</span></h2>
+  <ul>
+    <li>Arduino ProMini上的ATmega168已经预置了<a href="http://kb.open.eefocus.com/index.php/Bootloader" title="Bootloader">bootloader</a>程序，因此可以通过Arduino软件直接下载程序，参见[[]]。</li>
+    <li>但是，由于MINI板上面积小，故没有集成USB转串下载接口，需要自己外接，见该链接：http://home.eeworld.com.cn/my/space-uid-573537-blogid-243094.html</li>
+  </ul>
+  <p>&nbsp;</p>
+  <h2>串口调试</h2>
+  <p>若下载完成，说明UART串口也可用，直接在PC端打开一个串口工具，设置对应波特率和端口号即可；（推荐一个PC端串口工具mycommtool-v1_2）</p>
+  <p><img src="images/mycommontool.JPG" width="400" height="400"></p>
+  <h2><span id=".E7.89.A9.E7.90.86.E7.89.B9.E5.BE.81">物理特征</span></h2>
+  <p>Arduino UNO的最大尺寸为0.7 x 1.3 inches。</p>
+  <h2><span id=".E6.B3.A8.E6.84.8F.E8.A6.81.E7.82.B9">注意要点</span></h2>
+  <ul>
+    <li>Arduino ProMini提供了自动复位设计，可以通过主机复位。这样通过Arduino软件下在程序到ProMini中软件可以自动复位，不需要在复位按钮。</li>
+  </ul>
+  <h2><span id=".E6.89.A9.E5.B1.95.E9.98.85.E8.AF.BB">扩展阅读</span></h2>
+  <p><a href="http://arduino.cc/en/Main/ArduinoBoardProMini" rel="nofollow">http://arduino.cc/en/Main/ArduinoBoardProMini</a></p>
+</div>
+<p>&nbsp;</p>
+</body>
+</html>

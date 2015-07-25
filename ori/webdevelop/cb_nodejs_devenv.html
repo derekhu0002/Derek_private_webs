@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>CB开发指南</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: x-large;
+	color: #FF0000;
+	font-weight: bold;
+}
+#nav{
+margin-top: -20px;
+height: 50px;
+background-color:#000099;
+}
+#nav ul{
+list-style:none;
+}
+#nav ul li{
+float:left;
+padding-top:20px;
+margin-left:2%;
+width:5%;
+}
+#nav ul li a{
+color:#FFFFFF;
+}
+#nav ul li a:hover{
+opacity:0.5;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="nav">
+<ul>
+<li><a href="http://112.74.75.39">Arrdu主页</a></li>
+<li><a href="http://120.24.81.100:3000">CardBoard主页</a></li>
+</ul>
+</div>
+<p class="STYLE1">版本地址：root@120.24.81.100:/usr1/workfile/project.git</p>
+<p class="STYLE1">一、获取版本：</p>
+<p><span lang="en-US" xml:lang="en-US">1</span><span lang="zh-CN" xml:lang="zh-CN">、安装<a href="http://pan.baidu.com/s/1pJMHLOJ">客户端</a></span><a href="http://pan.baidu.com/s/1jGxj0MU"><span lang="en-US" xml:lang="en-US">GIT</span></a><span lang="zh-CN" xml:lang="zh-CN">；</span>（MsysGit）</p>
+<p><span lang="en-US" xml:lang="en-US">2</span><span lang="zh-CN" xml:lang="zh-CN">、可选择安装</span><span lang="en-US" xml:lang="en-US"><a href="http://pan.baidu.com/s/1jGxj0MU">TortoiseGit</a></span><span lang="zh-CN" xml:lang="zh-CN">；（有类似于</span><span lang="en-US" xml:lang="en-US">SVN</span><span lang="zh-CN" xml:lang="zh-CN">的图形化界面）</span></p>
+<p><span lang="en-US" xml:lang="en-US">3</span><span lang="zh-CN" xml:lang="zh-CN">、生成密钥：</span></p>
+<p>Git是分布式的代码管理工具，远程的代码管理是基于SSH的，所以要使用远程的Git则需要SSH的配置。</p>
+<p><span lang="en-US" xml:lang="en-US">3.1</span><span lang="zh-CN" xml:lang="zh-CN">、从开始菜单中找到Git 点击Git Bash 弹出命令行窗体，如下图：</span></p>
+<p><img src="cb_nodejs_devenv_clip_image001.jpg" alt="e" width="576" height="176" /></p>
+<p><span lang="en-US" xml:lang="en-US">3.2</span><span lang="zh-CN" xml:lang="zh-CN">、键入命令：</span></p>
+<p>$ ssh-keygen -t rsa -C “您的邮箱地址”</p>
+<p><span lang="en-US" xml:lang="en-US">3.3</span><span lang="zh-CN" xml:lang="zh-CN">、回车后，会叫输入密钥名字</span></p>
+<p>这里输入：c:<a href="file:///\\mykey\key">\\mykey\\key</a> 其中key为密钥文件名</p>
+<p><img src="cb_nodejs_devenv_clip_image002.jpg" alt="r" width="576" height="290" /></p>
+<p>接着会叫输入密码，输入密码和确认密码后，我们的密钥就生成了。</p>
+<p>此时我们在c:<a href="file:///\\mykey目录下就可以看到我们刚生成的密钥了">\\mykey目录下就可以看到我们刚生成的密钥了</a>：</p>
+<p><img src="cb_nodejs_devenv_clip_image003.jpg" alt="r3" width="576" height="141" /></p>
+<p><span lang="en-US" xml:lang="en-US">4</span><span lang="zh-CN" xml:lang="zh-CN">、将</span><span lang="en-US" xml:lang="en-US">3</span><span lang="zh-CN" xml:lang="zh-CN">步中生成的</span><span lang="en-US" xml:lang="en-US">key.pub</span><span lang="zh-CN" xml:lang="zh-CN">发送给</span><span lang="en-US" xml:lang="en-US">poppin3g@gmail.com</span><span lang="zh-CN" xml:lang="zh-CN">，联系</span><span lang="en-US" xml:lang="en-US">ranpop</span><span lang="zh-CN" xml:lang="zh-CN">进行添加；</span></p>
+<p><span lang="en-US" xml:lang="en-US">5</span><span lang="zh-CN" xml:lang="zh-CN">、</span><span lang="en-US" xml:lang="en-US">ranpop</span><span lang="zh-CN" xml:lang="zh-CN">确认添加</span><span lang="en-US" xml:lang="en-US">OK</span><span lang="zh-CN" xml:lang="zh-CN">后，在本地通过</span><span lang="en-US" xml:lang="en-US">git clone</span><span lang="zh-CN" xml:lang="zh-CN">将版本同步到本地；</span></p>
+<p>版本地址：root@120.24.81.100:/usr1/workfile/project.git</p>
+<p><span class="STYLE1" lang="zh-CN" xml:lang="zh-CN">二、本地开发：</span></p>
+<p><span lang="en-US" xml:lang="en-US">1</span><span lang="zh-CN" xml:lang="zh-CN">、安装</span><span lang="en-US" xml:lang="en-US"><a href="http://pan.baidu.com/s/1jGKQcL4">NODEJS</a></span><span lang="zh-CN" xml:lang="zh-CN">；（采用</span><span lang="en-US" xml:lang="en-US">windows</span><span lang="zh-CN" xml:lang="zh-CN">版的</span><span lang="en-US" xml:lang="en-US">msi</span><span lang="zh-CN" xml:lang="zh-CN">安装文件）</span></p>
+<p><span lang="en-US" xml:lang="en-US">2</span><span lang="zh-CN" xml:lang="zh-CN">、安装</span><span lang="en-US" xml:lang="en-US">express</span><span lang="zh-CN" xml:lang="zh-CN">；</span><span lang="en-US" xml:lang="en-US">(</span><span lang="zh-CN" xml:lang="zh-CN">打开</span><span lang="en-US" xml:lang="en-US">cmd</span><span lang="zh-CN" xml:lang="zh-CN">，使用命令</span><span lang="en-US" xml:lang="en-US">npm install express</span><span lang="zh-CN" xml:lang="zh-CN">完成</span><span lang="en-US" xml:lang="en-US">express</span><span lang="zh-CN" xml:lang="zh-CN">的安装；</span><span lang="en-US" xml:lang="en-US">)</span></p>
+<p><span lang="en-US" xml:lang="en-US">3</span><span lang="zh-CN" xml:lang="zh-CN">、安装</span><span lang="en-US" xml:lang="en-US"><a href="http://pan.baidu.com/s/1kTotV3T">mongodb</a></span><span lang="zh-CN" xml:lang="zh-CN">；（采用</span><span lang="en-US" xml:lang="en-US">windows</span><span lang="zh-CN" xml:lang="zh-CN">版的</span><span lang="en-US" xml:lang="en-US">msi</span><span lang="zh-CN" xml:lang="zh-CN">安装文件）</span></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">安装完成后，打开</span><span lang="en-US" xml:lang="en-US">cmd</span><span lang="zh-CN" xml:lang="zh-CN">，先执行：</span></p>
+<p>E:\derek\tools\MongoDB\Server\3.0\bin\mongod.exe  --dbpath &quot;E:\derek\Projects\wenlong_blog_nodejs\database&quot; --logpath  &quot;E:\derek\Projects\wenlong_blog_nodejs\logs\init.log&quot; --install  --serviceName &quot;mongo&quot; --logappend --directoryperdb</p>
+<p>其中程序路径和数据为路径以及日志路径由你自己设定，注意和实际的一致；</p>
+<p><span lang="zh-CN" xml:lang="zh-CN">然后继续在命令行中执行：</span><span lang="en-US" xml:lang="en-US">net start MongoDB</span><span lang="zh-CN" xml:lang="zh-CN">回车，若出现服务器启动成功，则完成；</span></p>
+<p><span lang="en-US" xml:lang="en-US">4</span><span lang="zh-CN" xml:lang="zh-CN">、在项目根目录下进入命令行（</span><span lang="en-US" xml:lang="en-US">shit+</span><span lang="zh-CN" xml:lang="zh-CN">鼠标右键），在命令行中运行</span><span lang="en-US" xml:lang="en-US">npm install</span><span lang="zh-CN" xml:lang="zh-CN">，等待</span><span lang="en-US" xml:lang="en-US">npm</span><span lang="zh-CN" xml:lang="zh-CN">完成所有依赖的内部模块的布署；</span></p>
+<p><span lang="en-US" xml:lang="en-US">5</span><span lang="zh-CN" xml:lang="zh-CN">、在</span><span lang="en-US" xml:lang="en-US">4</span><span lang="zh-CN" xml:lang="zh-CN">中同样的命令行中运行</span><span lang="en-US" xml:lang="en-US">node  app.js</span><span lang="zh-CN" xml:lang="zh-CN">，即可完成服务器的运行；</span></p>
+<p><span lang="en-US" xml:lang="en-US">6</span><span lang="zh-CN" xml:lang="zh-CN">、在浏览器中输入</span><a href="http://localhost:3000"><span lang="en-US" xml:lang="en-US">http://localhost:3000</span></a><span lang="zh-CN" xml:lang="zh-CN">，若出现主页内容，说明本地环境搭建</span><span lang="en-US" xml:lang="en-US">OK</span><span lang="zh-CN" xml:lang="zh-CN">，若未出现内容，再针对具体情况进行排查；</span></p>
+<p class="STYLE1">三、修改上库：</p>
+<p>在本地完成修改后，若要上库，采用以下步骤：</p>
+<p><span lang="en-US" xml:lang="en-US">1</span><span lang="zh-CN" xml:lang="zh-CN">、在项目根目录下右键，在弹出的菜单中选择“</span><span lang="en-US" xml:lang="en-US">git bash</span><span lang="zh-CN" xml:lang="zh-CN">”，在打开的命令行窗口中进行如下操作：</span></p>
+<p><span lang="en-US" xml:lang="en-US">Git status //</span><span lang="zh-CN" xml:lang="zh-CN">查看当前修改内容</span></p>
+<p><span lang="en-US" xml:lang="en-US">Git add [</span><span lang="zh-CN" xml:lang="zh-CN">要提交的文件列表</span><span lang="en-US" xml:lang="en-US">] </span></p>
+<p><span lang="en-US" xml:lang="en-US">Git commit //</span><span lang="zh-CN" xml:lang="zh-CN">将要提交的文件列表先提交到内地，同时加上日志</span></p>
+<p><span lang="en-US" xml:lang="en-US">Git push //</span><span lang="zh-CN" xml:lang="zh-CN">将已经</span><span lang="en-US" xml:lang="en-US">commit</span><span lang="zh-CN" xml:lang="zh-CN">的内容推送到服务器仓库</span></p>
+<p><span lang="en-US" xml:lang="en-US">2</span><span lang="zh-CN" xml:lang="zh-CN">、完成提交后等待</span><span lang="en-US" xml:lang="en-US">CI</span><span lang="zh-CN" xml:lang="zh-CN">结果，</span><span lang="en-US" xml:lang="en-US">CI</span><span lang="zh-CN" xml:lang="zh-CN">构建和布署完成后会发送邮件通知到你设置的邮箱；</span></p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>CardBoard</title>
+<style type="text/css">
+<!--
+.STYLE2 {
+	font-size: xx-large;
+	color: #FF0000;
+}
+-->
+</style>
+</head>
+
+<body>
+<p>虚拟现实应用开发之</p>
+<p><span lang="zh-CN" xml:lang="zh-CN">基于</span><span lang="en-US" xml:lang="en-US">Unity</span><span lang="zh-CN" xml:lang="zh-CN">的</span><span lang="en-US" xml:lang="en-US">CardBoard</span><span lang="zh-CN" xml:lang="zh-CN">应用系统开发指南</span></p>
+<hr />
+<p>开发环境：</p>
+<p><span lang="en-US" xml:lang="en-US">1</span><span lang="zh-CN" xml:lang="zh-CN">、安装</span><span lang="en-US" xml:lang="en-US">unity</span><span lang="zh-CN" xml:lang="zh-CN">开发软件：</span><a href="http://unity3d.com/unity/download"><span lang="zh-CN" xml:lang="zh-CN">http://unity3d.com/unity/download</span></a><span lang="zh-CN" xml:lang="zh-CN"> </span></p>
+<p><span lang="en-US" xml:lang="en-US">2</span><span lang="zh-CN" xml:lang="zh-CN">、一台带有</span><span lang="en-US" xml:lang="en-US">gsensor</span><span lang="zh-CN" xml:lang="zh-CN">（重力传感器）和</span><span lang="en-US" xml:lang="en-US">msensor</span><span lang="zh-CN" xml:lang="zh-CN">（磁力传感器）的手机</span><span lang="en-US" xml:lang="en-US">-</span><span class="STYLE2" lang="zh-CN" xml:lang="zh-CN">请注意不仅是</span><span class="STYLE2" lang="en-US" xml:lang="en-US">ANDROID</span><span class="STYLE2" lang="zh-CN" xml:lang="zh-CN">！！也可以是</span><span class="STYLE2" lang="en-US" xml:lang="en-US">IPHONE</span><span class="STYLE2" lang="zh-CN" xml:lang="zh-CN">！！</span><span class="STYLE2" lang="en-US" xml:lang="en-US">NB</span><span class="STYLE2" lang="zh-CN" xml:lang="zh-CN">吧！</span><span lang="en-US" xml:lang="en-US">+</span><span lang="zh-CN" xml:lang="zh-CN">一个</span><span lang="en-US" xml:lang="en-US">cardboard(</span><span lang="zh-CN" xml:lang="zh-CN">淘宝上有</span><span lang="en-US" xml:lang="en-US">20</span><span lang="zh-CN" xml:lang="zh-CN">来块一个</span><span lang="en-US" xml:lang="en-US">)</span><span lang="zh-CN" xml:lang="zh-CN">；</span></p>
+<p><span lang="en-US" xml:lang="en-US">3</span><span lang="zh-CN" xml:lang="zh-CN">、</span><span lang="en-US" xml:lang="en-US">AndroidSDK</span><span lang="zh-CN" xml:lang="zh-CN">；</span></p>
+<p><span lang="en-US" xml:lang="en-US">4</span><span lang="zh-CN" xml:lang="zh-CN">、</span><span lang="en-US" xml:lang="en-US">OPEN DIVE SENSOR</span><span lang="zh-CN" xml:lang="zh-CN">插件：</span><a href="https://www.durovis.com/sdk.html"><span lang="zh-CN" xml:lang="zh-CN">https://www.durovis.com/sdk.html</span></a> <span class="STYLE2" lang="zh-CN" xml:lang="zh-CN">这是最牛</span><span class="STYLE2" lang="en-US" xml:lang="en-US">B</span><span class="STYLE2" lang="zh-CN" xml:lang="zh-CN">的插件</span></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">开发一个简单的</span><span lang="en-US" xml:lang="en-US">CARDBOARD</span><span lang="zh-CN" xml:lang="zh-CN">应用</span></p>
+<p>可以先体验一下：<a href="resources/hawii.apk">hawii.apk</a></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">一、把Dive_Plugin_2.1.3.unitypackage放置到</span><span lang="en-US" xml:lang="en-US">unity</span><span lang="zh-CN" xml:lang="zh-CN">插件目录下Unity\Editor\Standard  Packages；</span></p>
+<p><img src="index_clip_image001_0000.png" alt="1" width="576" height="258" /></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">二、打开</span><span lang="en-US" xml:lang="en-US">UNITY3D</span><span lang="zh-CN" xml:lang="zh-CN">，建立项目，注意把所有</span><span lang="en-US" xml:lang="en-US">package</span><span lang="zh-CN" xml:lang="zh-CN">都选上；</span></p>
+<p><img src="index_clip_image002_0000.png" alt="1" width="563" height="363" /></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">然后点</span><span lang="en-US" xml:lang="en-US">create</span><span lang="zh-CN" xml:lang="zh-CN">；</span></p>
+<p>三、在网上下了个夏威夷场景包：</p>
+<p><img src="index_clip_image003_0000.png" alt="1" width="540" height="384" /></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">四、把下载的场景包导入</span><span lang="en-US" xml:lang="en-US">UNITY</span><span lang="zh-CN" xml:lang="zh-CN">项目：</span></p>
+<p>导入的方法很简单，直接把上面的QianMo's  ShaderClass01 FinialScene.unitypackage拉到下面右边空白区，即开始自动导入；</p>
+<p>导入完成后的目录请看：</p>
+<p><img src="index_clip_image004.png" alt="1" width="82" height="384" /></p>
+<p>效果请看：</p>
+<p><img src="index_clip_image005.png" alt="1" width="576" height="275" /></p>
+<p>&nbsp;</p>
+<p>蓝天白云，大海！</p>
+<p>&nbsp;</p>
+<p>五、好了，开始做个第一人称，最简单的就是放一对“眼睛”：</p>
+<p><span lang="zh-CN" xml:lang="zh-CN">把原来的</span><span lang="en-US" xml:lang="en-US">CAMERA</span><span lang="zh-CN" xml:lang="zh-CN">对像删掉；这个场景里面就没有</span><span lang="en-US" xml:lang="en-US">CAMERA</span><span lang="zh-CN" xml:lang="zh-CN">；</span></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">把</span><span lang="en-US" xml:lang="en-US">DIVE</span><span lang="zh-CN" xml:lang="zh-CN">目录下的</span><span lang="en-US" xml:lang="en-US">Dual_Camera</span><span lang="zh-CN" xml:lang="zh-CN">拉到场景中；</span></p>
+<p><img src="index_clip_image006.png" alt="11" width="576" height="265" /></p>
+<p>注意看路径；</p>
+<p>拉入后效果：</p>
+<p><img src="index_clip_image007.png" alt="1" width="576" height="274" /></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">放到哪里你自己决定，选中那两个子</span><span lang="en-US" xml:lang="en-US">CAMERA</span><span lang="zh-CN" xml:lang="zh-CN">，右下角就会出现</span><span lang="en-US" xml:lang="en-US">CAMERA</span><span lang="zh-CN" xml:lang="zh-CN">的预览图像，就好像你的两只眼睛看到的一样；</span></p>
+<p>预览画面如下：</p>
+<p><img src="index_clip_image008.png" alt="1" width="576" height="274" /></p>
+<p>左右分屏效果；</p>
+<p>&nbsp;</p>
+<p><span lang="zh-CN" xml:lang="zh-CN">六、生成</span><span lang="en-US" xml:lang="en-US">ANDROID APP</span><span lang="zh-CN" xml:lang="zh-CN">；</span></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">选择</span><span lang="en-US" xml:lang="en-US">file-build  setting</span><span lang="zh-CN" xml:lang="zh-CN">子菜单：</span></p>
+<p><img src="index_clip_image009.png" alt="1" width="351" height="384" /></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">选择左边下面框里面的</span><span lang="en-US" xml:lang="en-US">android:</span></p>
+<p><img src="index_clip_image010.png" alt="1" width="353" height="384" /></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">然后选</span><span lang="en-US" xml:lang="en-US">build</span><span lang="zh-CN" xml:lang="zh-CN">就可以生成</span><span lang="en-US" xml:lang="en-US">apk</span><span lang="zh-CN" xml:lang="zh-CN">了，你也可以把手机先插在电脑上，然后点击</span><span lang="en-US" xml:lang="en-US">build and run</span><span lang="zh-CN" xml:lang="zh-CN">这样会编好后直接给你安装到手机上；</span></p>
+<p><span lang="zh-CN" xml:lang="zh-CN">等待</span><span lang="en-US" xml:lang="en-US">UNITY</span><span lang="zh-CN" xml:lang="zh-CN">自动生成：</span></p>
+<p><img src="index_clip_image011.png" alt="1" width="576" height="230" /></p>
+<p>&nbsp;</p>
+<p><span lang="zh-CN" xml:lang="zh-CN">生成的</span><span lang="en-US" xml:lang="en-US">APK:</span></p>
+<p><img src="index_clip_image012.png" alt="1" width="441" height="28" /></p>
+<p lang="en-US" xml:lang="en-US">&nbsp;</p>
+<p lang="en-US" xml:lang="en-US">Work  done!</p>
+<p>来看看效果。。。</p>
+</body>
+</html>

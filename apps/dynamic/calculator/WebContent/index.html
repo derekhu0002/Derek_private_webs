@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>websocket test</title>
+</head>
+<script language="javascript">
+
+</script>
+<body>
+<p><img src="huaweilogo.jpg" width="78" height="64">LTE开发四部L2公共算法组_CELLDT数据分析专家系统</p>
+<hr>
+<p>&nbsp;</p>
+<table>
+<tr>
+<td height="23">请输入需要分析的数据所在路径：</td>
+<td><input type="text" id="datapath"></td>
+</tr>
+<tr>
+<td>请选择要进行的分析类型：</td>
+<td><form name="anatype" id="anatype" method="post" action="">
+  <label for="select"></label>
+  <select name="select" id="select">
+    <option>根据DRB性能监测进行时延统计</option>
+    <option>统计每TTI利用RB总数</option>
+  </select>
+  </form>
+</td>
+</tr>
+<tr>
+<td></input></td>
+</tr>
+</table>
+<p>
+  <input name="button" type="button" id="sendbutton" onClick="click" value="开始分析">
+  <script type="text/javascript">//var username = window.prompt("请输入你的工号:");
+//document.write("Welcome<p id=\"username\">"+username+"</p>");
+if (!window.WebSocket && window.MozWebSocket)
+window.WebSocket=window.MozWebSocket;
+if (!window.WebSocket)
+alert("请使用google chrome浏览器！");
+
+var ws;
+var btn = document.getElementById("sendbutton");
+var no1 = document.getElementById("datapath");
+var no2 = document.getElementById("select");
+function send(data){
+	console.log("Send:"+data);        
+	ws.send(data);
+};
+function sendMessage(){
+	var msg="CALCULATOR_"+no1.value+"_"+no2.selectedIndex;
+	send(msg);
+	console.log("sendMessage OK");
+};
+window.onload = function(){
+	btn.onclick = function(){sendMessage();};
+	startWebSocket();
+};
+function startWebSocket(){ 
+	ws = new WebSocket("ws://" + location.host + "/calculator/calculate");
+	ws.onopen = function(){
+		console.log("success open");
+	};
+	ws.onmessage = function(event){
+		console.log("RECEIVE:"+event.data);
+	};
+	ws.onclose = function(event) { 
+		console.log("Client notified socket has closed",event); 
+	}; 
+};
+  </script>
+</p>
+</body>
+</html>

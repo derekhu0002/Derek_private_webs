@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>语音交互技术</title>
+</head>
+
+<body>
+<p>语音交互技术---#@@-本站研究CMUsphix4</p>
+<hr>
+<p>主要开源平台：</p>
+<H3>1）CMU-Sphinx</H3>
+<p>CMU-Sphinx也简称为Sphinx（狮身人面像），是卡内基 - 梅隆大学（ Carnegie Mellon University，CMU）开发的一款开源的语音识别系统， 它包括一系列的语音识别器和声学模型训练工具。</p>
+<p>Sphinx有多个版本，其中Sphinx1~3是C语言版本的，而Sphinx4是Java版的，另外还有针对嵌入式设备的精简优化版PocketSphinx。Sphinx-I 由李开复（Kai-Fu Lee）于1987年左右开发，使用了固定的HMM模型（含3个大小为256的codebook），它被号称为第一个高性能的连续语音识别 系统（在Resource Management数据库上准确率达到了90%+）。Sphinx-II由Xuedong Huang于1992年左右开发，使用了半连续的HMM模型， 其HMM模型是一个包含了5个状态的拓扑结构，并使用了N-gram的语言模型，使用了Fast lextree作为实时的解码器，在WSJ数据集上的识别率 也达到了90%+。</p>
+<p>Sphinx-III主要由Eric Thayer 和Mosur Ravishankar于1996年左右开发，使用了完全连续的（也支持半连续的）HMM模型，具有灵活 的feature vector和灵活的HMM拓扑结构，包含可选的两种解码器：较慢的Flat search和较快的Lextree search。该版本在BN（98的测评数据 集）上的WER（word error ratio）为19%。Sphinx-III的最初版还有很多limitations，诸如只支持三音素文本、只支持Ngram模型（不 支持CFG/FSA/SCFG）、对所有的sound unit其HMM拓扑结构都是相同的、声学模型也是uniform的。Sphinx-III的最新版是09年初发布的0.8版， 在这些方面有很多的改进。</p>
+<p>最新的Sphinx语音识别系统包含如下软件包：<BR>
+  ? Pocketsphinx — recognizer library written in C.<BR>
+  ? Sphinxbase — support library required by Pocketsphinx<BR>
+  ? Sphinx4 — adjustable, modifiable recognizer written in Java<BR>
+  ? CMUclmtk — language model tools<BR>
+  ? Sphinxtrain — acoustic model training tools<BR>
+  这些软件包的可执行文件和源代码在sourceforge上都可以免费下载得到。</p>
+<p>简介：</p>
+<p><a href="http://my.oschina.net/jamesju/blog/105125">http://my.oschina.net/jamesju/blog/105125</a></p>
+<p>下载页面：</p>
+<p><a href="http://sourceforge.net/projects/cmusphinx/">http://sourceforge.net/projects/cmusphinx/</a></p>
+<p>开发简介：</p>
+<p><a href="http://download.csdn.net/detail/toteachinchina/4317798">http://download.csdn.net/detail/toteachinchina/4317798</a></p>
+<p>源码树：</p>
+<p><a href="http://sourceforge.net/p/cmusphinx/code/HEAD/tree/">http://sourceforge.net/p/cmusphinx/code/HEAD/tree/</a></p>
+<p>主干SVN地址：（Read Only）</p>
+<p><a href="svn://svn.code.sf.net/p/cmusphinx/code/trunk">svn://svn.code.sf.net/p/cmusphinx/code/trunk</a></p>
+<p>tutorialam:</p>
+<p><a href="http://cmusphinx.sourceforge.net/wiki/tutorialam">http://cmusphinx.sourceforge.net/wiki/tutorialam</a></p>
+<p><STRONG>CMU Sphinx-4：</STRONG> </p>
+<p> Sphinx-4是完全用Java语言写的先进的语音识别系统。它是通过卡内基梅隆大学Sphinx组，Sun微系统实验室、三菱电器研究实验室、惠普等联合完成的，同时美国加州大学圣克鲁斯分校和麻省理工学院也对其有贡献。 </p>
+<H3>2）HTK</H3>
+<p>HTK是Hidden Markov Model Toolkit（隐马尔科夫模型工具包）的简称，HTK主要用于语音识别研究，现在已经被用于很多其他方面的研究， 包括语音合成、字符识别和DNA测序等。</p>
+<p>HTK最初是由剑桥大学工程学院（Cambridge University Engineering Department ，CUED）的机器智能实验室（前语音视觉及机器人组） 于1989年开发的，它被用来构建CUED的大词汇量的语音识别系统。93年Entropic Research Laboratory Inc.获得了出售HTK的权利，并在95年 全部转让给了刚成立的Entropic Cambridge Research Laboratory Ltd，Entropic一直销售着HTK，直到99年微软收购了Entropic，微软重新 将HTK的版权授予CUED，并给CUED提供支持，这样CUED重新发布了HTK，并在网络上提供开发支持。</p>
+<p>HTK的最新版本是09年发布的3.4.1版，关于HTK的实现原理和各个工具的使用方法可以参看HTK的文档HTKBook</p>
+<h3>3）Julius</h3>
+<p>Julius是一个高性能、双通道的大词汇量连续语音识别（large vocabulary continues speech recognition，LVCSR）的开源项目， 适合于广大的研究人员和开发人员。它使用3-gram及上下文相关的HMM，在当前的PC机上能够实现实时的语音识别，单词量达到60k个。</p>
+<p>Julius整合了主要的搜索算法，高度的模块化使得它的结构模型更加独立，它同时支持多种HMM模型（如shared-state triphones 和 tied-mixture models等），支持多种麦克风通道，支持多种模型和结构的组合。它采用标准的格式，这使得和其他工具箱交叉使用变得 更容易。它主要支持的平台包括Linux和其他类Unix系统，也适用于Windows。它是开源的，并使用BSD许可协议。</p>
+<p>自97年后，Julius作为日本LVCSR研究的一个自由软件工具包的一部分而延续下来，后在2000年转由日本连续语音识别联盟(CSRC)经营。 从3.4版起，引入了被称为“Julian”的基于语法的识别解析器，Julian是一个改自Julius的以手工设计的DFA作为语言模型的版本，它可以 用来构建小词汇量的命令识别系统或语音对话系统</p>
+<h3>4）RWTH ASR</h3>
+<p>该工具箱包含最新的自动语音识别技术的算法实现，它由 RWTH Aachen 大学的Human Language Technology and Pattern Recognition Group 开发。</p>
+<p>RWTH ASR工具箱包括声学模型的构建、解析器等重要部分，还包括说话人自适应组件、说话人自适应训练组件、非监督训练组件、个性化 训练和单词词根处理组件等，它支持Linux和Mac OS等操作系统，其项目网站上有比较全面的文档和实例，还提供了现成的用于研究目的的 模型等。</p>
+<p>该工具箱遵从一种从QPL发展而来的开源协议，只允许用于非商业用途</p>
+<h3>5）Jasper</h3>
+<p><a href="http://jasperproject.github.io/">http://jasperproject.github.io/</a></p>
+<p><a href="https://github.com/jasperproject/jasper-client">https://github.com/jasperproject/jasper-client</a></p>
+<h3>6）其他</h3>
+<p>上面提到的开源工具箱主要都是用于语音识别的，其他的开源语音识别项目还有Kaldi 、simon 、iATROS-speech 、SHoUT 、 Zanzibar OpenIVR 等。</p>
+<p>常见的语音合成的开源工具箱有MARY、SpeakRight、Festival 、FreeTTS 、Festvox 、eSpeak 、Flite 等。</p>
+<p>常见的声纹识别的开源工具箱有Alize、openVP等。</p>
+</body>
+</html>

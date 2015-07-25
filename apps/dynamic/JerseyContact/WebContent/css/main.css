@@ -1,0 +1,174 @@
+body {
+		margin-left:auto; margin-right:auto;
+    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+    width: 1440px;
+}
+p {
+		margin-left:auto; margin-right:auto;width: 100%;
+    color: rgb(170,170,170);
+    font-size: 14px;
+}
+#navbox {
+    background: rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 100;
+}
+.nav ul {
+    display: block;
+    list-style: none;
+    width: 1000px;
+    height: 46px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+}
+.nav ul li {
+    float: left; /*用display inline-block也可以？*/
+}
+.imgsearch {
+    margin: 15px 0px 0px 28px;
+}
+
+.imglogo {
+    margin: 11px 30px 0px 0px;
+}
+.nav ul li a {
+    display: block;
+    margin: 0px 13px;
+    padding-top: 14px;
+    height: 32px;
+    width: 85px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.nav ul li:hover {
+    opacity: 0.5;
+}
+.banner {
+    background-image: url(../img/homepage-banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 844px;
+    margin-top: -236px;
+    position: relative;
+}
+.text {
+    color: white;
+    text-align: center;
+    list-style: none;
+    padding-top: 430px;
+    -webkit-font-smoothing: antialiased;
+}
+.text h1 {
+    font-size: 64px;
+    margin: 0px;
+}
+.text a {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+    margin-top: 28px;
+    font-size: 24px;
+}
+.text a:hover {
+    color: #5cc3f6;
+}
+.textlink a {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    height: 590px;
+    width: 1436px;
+} 
+.sections {
+    display: block;
+    height: 205px;
+}
+.sectionitems {
+    display: block;
+    width: 354px;
+    margin: 2px;
+    float: left;
+    text-align: center;
+}
+.sectionitems a {
+    display: block; /*block为什么没有独占一行*/
+    text-decoration: none;
+    color: transparent;
+    height: 200px;
+}
+.sectionitems .iPad {
+    background-image: url(../img/iPad.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.sectionitems .iPhone {
+    background-image: url(../img/iPhone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.sectionitems .watch {
+    background-image: url(../img/watch.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.sectionitems .iMac {
+    background-image: url(../img/iMac.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.footer {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    height: 36px;
+    margin: 26px 225px 26px 225px;
+    font-size: 10px;
+    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+}
+.footer a {
+    text-decoration: none;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+}
+.footer .footer2 {
+    display: -webkit-box;
+    float: right;
+    width: 400px;
+    margin-top: -14px;
+}
+.footer .footer2 li a {
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    border-right-width: 1px;
+    border-right-color: rgb(227, 227, 227);
+    border-right-style: solid;
+}
+.footer .footer2 li img{
+    margin-top: -2.5px; /*有没有居中对齐的方式*/
+    margin-left: 5px; /*用margin还是padding，好像都有效*/
+}
+.footer .footer3 {
+    margin-top: 12px;
+}
+.footer a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+

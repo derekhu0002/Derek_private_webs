@@ -1,0 +1,181 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="gb2312" />
+	<meta http-equiv="pragma" content="no-cache">
+	<title>Arrdu-Derek</title>
+	<link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+	<link rel="stylesheet" href="css/reset.css" media="screen,projection" />
+	<link rel="stylesheet" href="css/grid.css" media="screen,projection" />
+	<link rel="stylesheet" href="css/style.css" media="screen,projection" />
+	<script src="js/jquery.js"></script>
+	<script src="js/modernizr.js"></script> 
+	<script src="js/jquery.nivo.slider.pack.js"></script> 
+	<script src="js/script.js"></script> 
+</head>
+<body>
+	<!-- START OF HEADER --> 
+    <header>
+		<!-- START OF TOP --> 
+		<div id="top">
+			<div class="container_12">
+				<a href="#"><img src="images/logo.png" alt="UltraAnalytic App logo" class="grid_4" /></a>
+				<nav class="grid_6 push_2">
+					<ul class="clearfix">
+						<li class="selected"><a href="#">主页</a></li>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">我们的知识</a></li>
+						<li><a href="#">我们的作品</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</nav>		
+			</div>
+		</div>	
+		<!-- END OF TOP --> 
+		<!-- START OF SLIDER --> 
+		<div class="container_12">
+			<div class="sliderWrapper">
+				<div class="ribbon"></div>
+	            <div id="slider" class="nivoSlider">
+	                <img src="images/slider1.jpg" alt="iPad App" title="#sliderContent1" />
+	                <img src="images/slider2.jpg" alt="Desktop App" title="#sliderContent2" />
+	                <img src="images/slider3.jpg" alt="iPhone App" title="#sliderContent3" />
+	            </div>
+				<div id="sliderContent1" class="nivo-html-caption">
+	                <h1>CardBoard博客平台</h1>
+					<p>如果您对虚拟现实感兴趣，无论您是只想玩玩还是参于开发，都可以轻松入门，让我们一起来促进平民化虚拟现实的成长，相信有你更精彩！</p>
+					<a href="#" class="button">进入CardBoard博客平台</a>
+	            </div>
+				<div id="sliderContent2" class="nivo-html-caption">
+	                <h2>MBED-ARM</h2>
+					<p>物联网正在蓄势待发，将来将有数以千亿计的设备遍布世界各地，你准备好了吗？一起进入ARM打造的物联网生态系统吧！</p>
+					<a href="#" class="button">和更多的人交流</a>
+	            </div>
+				<div id="sliderContent3" class="nivo-html-caption">
+	                <h2>知识管理</h2>
+					<p>人机交互与物联网成为大势，我们在学习和实践的过程中，不断形成知识体系，有兴趣的话，来看看我们的知识管理吧！</p>
+					<a href="#" class="button">进入开始指点</a>
+	            </div>
+			</div>
+    	</div>
+		<!-- END OF SLIDER --> 
+	</header>
+	<!-- END OF HEADER --> 
+	<!-- START OF MAIN --> 
+    <div id="main" role="main">
+		<div class="container_12 clearfix">
+			<article class="grid_4">
+				<h2>敏捷开发</h2>
+				<h3>我们采用敏捷开发过程开展产品开发，我们的敏捷知识也在不断成长！</h3>
+				<p>等会儿写</p>
+				<p><a href="http://112.74.75.39/agile" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>面向对像</h2>
+				<h3>我们一直践行面向对像的系统分析与设计</h3>
+				<p>等会儿写</p>
+				<p><a href="OOAD.html" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>职业化</h2>
+				<h3>关于职业化</h3>
+				<p>等会儿写</p>
+				<p><a href="jobs.html" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>物联网</h2>
+				<h3>关于物联网技术及相关项目</h3>
+				<p>等会儿写</p>
+				<p><a href="#" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>WEB开发</h2>
+				<h3>关于WEB开发技术</h3>
+				<p>等会儿写</p>
+				<p><a href="http://112.74.75.39/webdevelop" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>CardBoard</h2>
+				<h3>关于廉价虚拟与增强现实技术</h3>
+				<p>等会儿写</p>
+				<p><a href="http://112.74.75.39/CardBoard" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>语音交互</h2>
+				<h3>关于语音交互技术</h3>
+				<p>等会儿写</p>
+				<p><a href="http://112.74.75.39/acoustic" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>Unity</h2>
+				<h3>关于Unity开发平台及相关项目</h3>
+				<p>等会儿写</p>
+				<p><a href="#" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>Arduino</h2>
+				<h3>关于arduino技术</h3>
+				<p>等会儿写</p>
+				<p><a href="http://112.74.75.39/arduinoProjects" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>MBED</h2>
+				<h3>关于MBED开发</h3>
+				<p>等会儿写</p>
+				<p><a href="#" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>Android</h2>
+				<h3>关于Android开发</h3>
+				<p>等会儿写</p>
+				<p><a href="#" class="moreLink">了解更多</a></p>
+			</article>
+			<article class="grid_4">
+				<h2>iOS</h2>
+				<h3>关于iOS开发</h3>
+				<p>等会儿写</p>
+				<p><a href="#" class="moreLink">了解更多</a></p>
+			</article>
+		</div>
+    </div>	
+	<!-- END OF MAIN --> 
+	<!-- START OF TESTIMONIALS --> 
+	<div id="testimonials">
+		<div class="container_12">
+			<div class="grid_6">
+				<blockquote>arrdu是一个伟大的团队</blockquote>
+				<cite>冉文龙.arrdu CEO</cite>
+			</div>
+			<div class="grid_6">
+				<blockquote>的确是的</blockquote>
+				<cite>胡东华.arrdu CTO</cite>
+			</div>
+		</div>
+	</div>
+	<!-- END OF TESTIMONIALS --> 
+    <!-- START OF FOOTER --> 
+	<footer>
+		<div class="container_12">
+			<nav id="siteLinks" class="grid_5">
+				<ul class="clearfix">
+					<li class="selected"><a href="#">主页</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">没想好</a></li>
+					<li><a href="#">我们的作品</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</nav>
+			<nav id="socialMedia" class="grid_4 push_3">
+				<a href="#"><img src="images/facebookShare.jpg" alt="QQ share" /></a>
+				<a href="#"><img src="images/twitterShare.jpg" alt="BAIDU share" /></a>
+				<a href="#"><img src="images/linkedinShare.jpg" alt="ALI share" /></a>
+			</nav>
+		</div>
+    </footer>
+	<!-- END OF FOOTER --> 
+</body>
+</html>
