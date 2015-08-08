@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("1.1.2:1", "", "分享者", "EARoot/EA1/EA1/EA2/EA29.htm", "6.png", "19", "0", "", "Actor0","{08CC326A-FAB7-420a-B9A3-404EF8B5104F}");
-tocTab[tocTab.length] = new Array("1.1.2:2", "", "审核员", "EARoot/EA1/EA1/EA2/EA30.htm", "6.png", "68", "0", "", "Actor0","{F6A04693-FA45-4d49-9D89-C791DF08737A}");
-tocTab[tocTab.length] = new Array("1.1.2:3", "", "HR", "EARoot/EA1/EA1/EA2/EA31.htm", "6.png", "22", "0", "", "Actor0","{A8ACB322-397C-41d5-BAD7-78C5397CAB20}");
-tocTab[tocTab.length] = new Array("1.1.2:4", "", "应聘者", "EARoot/EA1/EA1/EA2/EA32.htm", "6.png", "16", "0", "", "Actor0","{EF3D5A9B-58D8-41f6-97AC-7BA49E40ED42}");
+tocTab[tocTab.length] = new Array("1.1.2:1", "", "分享者", "EARoot/EA1/EA1/EA2/EA16.htm", "6.png", "19", "0", "", "Actor0","{08CC326A-FAB7-420a-B9A3-404EF8B5104F}");
+tocTab[tocTab.length] = new Array("1.1.2:2", "", "审核员", "EARoot/EA1/EA1/EA2/EA17.htm", "6.png", "68", "0", "", "Actor0","{F6A04693-FA45-4d49-9D89-C791DF08737A}");
+tocTab[tocTab.length] = new Array("1.1.2:3", "", "HR", "EARoot/EA1/EA1/EA2/EA18.htm", "6.png", "22", "0", "", "Actor0","{A8ACB322-397C-41d5-BAD7-78C5397CAB20}");
+tocTab[tocTab.length] = new Array("1.1.2:4", "", "应聘者", "EARoot/EA1/EA1/EA2/EA19.htm", "6.png", "16", "0", "", "Actor0","{EF3D5A9B-58D8-41f6-97AC-7BA49E40ED42}");
