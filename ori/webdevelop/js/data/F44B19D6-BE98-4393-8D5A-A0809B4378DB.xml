@@ -1,3 +1,15 @@
 tocTab[tocTab.length] = new Array("1:1", "", "全局用例视图", "EARoot/EA1/EA2.htm", "180.png", "1", "0", "", "Use Case diagram0","{0D0304FE-03E6-4e5c-BA9E-1212C8E9DDBD}");
-tocTab[tocTab.length] = new Array("1.1", "1", "Actors", "EARoot/EA1/EA7.htm", "4.png", "", "", "{5330C137-9CA5-44b1-B308-71AA622D7FE1}", "Package");
-tocTab[tocTab.length] = new Array("1.2", "1", "Use Cases", "EARoot/EA1/EA9.htm", "4.png", "", "", "{1673F6F8-CA1A-45be-A6FC-2BF891AF1DF4}", "Package");
+tocTab[tocTab.length] = new Array("1:3", "", "审核和维护招聘信息", "EARoot/EA1/EA9.htm", "7.png", "105", "0", "", "UseCase0","{6782D498-D8C8-4c7a-B44F-53D392305123}");
+tocTab[tocTab.length] = new Array("1:4", "", "«business use case» H5登录", "EARoot/EA1/EA11.htm", "7.png", "97", "0", "", "UseCase0","{0BDEF6CF-4A1B-451e-9E0B-10B83EA197DA}");
+tocTab[tocTab.length] = new Array("1:5", "", "H5登录", "EARoot/EA1/EA13.htm", "21.png", "99", "97", "", "Activity0","{3474C660-905C-472f-80F4-7F787E9FDE80}");
+tocTab[tocTab.length] = new Array("1:2", "", "H5登录", "EARoot/EA1/EA4.htm", "181.png", "9", "99", "", "Activity diagram0","{BF4CE8E0-12BE-4593-B749-6562D5CA5D1F}");
+tocTab[tocTab.length] = new Array("1:6", "", "点击投递简历或分享该项信息", "EARoot/EA1/EA14.htm", "104.png", "102", "99", "", "Action0","{8F558A2B-29F4-4949-81F8-57F2030EA8E0}");
+tocTab[tocTab.length] = new Array("1:7", "", "«Activity» 检查该用户是否已经手机注册过", "EARoot/EA1/EA15.htm", "21.png", "31", "99", "", "Activity0","{AD8D4454-46E7-4cc4-9AA6-8E2C8DB3FDF6}");
+tocTab[tocTab.length] = new Array("1:8", "", "«Activity» 进入到微信登录界面", "EARoot/EA1/EA16.htm", "21.png", "28", "99", "", "Activity0","{121F4F14-AE6F-4f39-BDDE-9C2B85C654F0}");
+tocTab[tocTab.length] = new Array("1:9", "", "«Activity» 进入手机注册界面", "EARoot/EA1/EA17.htm", "21.png", "33", "99", "", "Activity0","{B0D657E5-E6E6-41f3-BAC9-33F8E43C3A7E}");
+tocTab[tocTab.length] = new Array("1:10", "", "ActivityInitial", "EARoot/EA1/EA18.htm", "68.png", "101", "99", "", "StateNode0","{1C4FF775-0CB1-47ab-A00A-FFE247972051}");
+tocTab[tocTab.length] = new Array("1:11", "", "生成验证码并通过短信发送到应聘者", "EARoot/EA1/EA19.htm", "21.png", "36", "99", "", "Activity0","{9742ED75-C55F-44c2-A64E-49C88D5B0A4F}");
+tocTab[tocTab.length] = new Array("1:12", "", "FlowFinal", "EARoot/EA1/EA20.htm", "98.png", "103", "99", "", "StateNode0","{259574C3-E5C8-4f63-B68A-6B528FBE07C1}");
+tocTab[tocTab.length] = new Array("1:13", "", "完成手机注册", "EARoot/EA1/EA21.htm", "21.png", "38", "99", "", "Activity0","{FF078094-728C-409b-830F-D93D0F045028}");
+tocTab[tocTab.length] = new Array("1.1", "1", "Actors", "EARoot/EA1/EA8.htm", "4.png", "", "", "{5330C137-9CA5-44b1-B308-71AA622D7FE1}", "Package");
+tocTab[tocTab.length] = new Array("1.2", "1", "Use Cases", "EARoot/EA1/EA12.htm", "4.png", "", "", "{1673F6F8-CA1A-45be-A6FC-2BF891AF1DF4}", "Package");
