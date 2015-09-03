@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>H5登录</title>
+<title>置为初步PASS、待技术面、HR面、拒绝等多种状态</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {
@@ -16,15 +16,15 @@ function initPage(src) {
 <body onload="initPage(this);" class="Content">
 <div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">H5登录  : public   activity</span>
+	<span class="ObjectTitle">置为初步PASS、待技术面、HR面、拒绝等多种状态  : public   activity</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">2015/8/8 12:51:07</td>
+			<td width="85%" class="ObjectDetailsValue">2015/9/3 13:56:54</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">2015/9/3 13:25:21</td>
+			<td class="ObjectDetailsValue">2015/9/3 13:58:21</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -57,41 +57,66 @@ function initPage(src) {
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{3474C660-905C-472f-80F4-7F787E9FDE80}</td>
+			<td class="ObjectDetailsValue">{DBE74DDB-0D09-4c6a-BD09-B3748CCDCE8F}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue"><a href="EA20.htm">Activity</a></td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('FlowTo');" id="FlowToTitle">Flow To</li>
+			<li onClick="parent.toggleItem('FlowFrom');" id="FlowFromTitle">Flow From</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Custom Properties</li>
 		</ul>
-		<div class="ItemBody" id="ConstraintsTable">
+		<div class="ItemBody" id="FlowToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-			  	<tr>
-					<td width="80%" class="TableHeading">Constraint</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Status</td>
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
 				</tr>
 				<tr>
-					<td width="80%" class="TableRow">登录成功于否，如果登录成功要记录下用户信息</td>
-					<td width="10%" class="TableRow">Post-condition</td>
-					<td width="10%" class="TableRow">Approved</td>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA126.htm">保存修改的状态信息到《简历管理模块》</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
 				</tr>
 				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints313" onclick="parent.toggleDiv('detailsDIVConstraints313','DetailsImageConstraints313')" />Details:
-							<div id="detailsDIVConstraints313" class="DetailsDiv" >
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow463" onclick="parent.toggleDiv('detailsDIVLinkFlow463', 'DetailsImageLinkFlow463')" />Details:
+							<div id="detailsDIVLinkFlow463" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
-
+			</table>
+		</div>
+		<div class="ItemBody" id="FlowFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA127.htm">打开选中简历</a><br />
+						Activity &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow464" onclick="parent.toggleDiv('detailsDIVLinkFlow464', 'DetailsImageLinkFlow464')" />Details:
+							<div id="detailsDIVLinkFlow464" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
 			</table>
 		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">

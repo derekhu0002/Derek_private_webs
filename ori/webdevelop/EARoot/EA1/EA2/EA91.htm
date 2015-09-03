@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ActivityFinal</title>
+<title>进入到招聘信息详情界面</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {
@@ -16,15 +16,15 @@ function initPage(src) {
 <body onload="initPage(this);" class="Content">
 <div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">ActivityFinal  : public   activityfinal</span>
+	<span class="ObjectTitle">进入到招聘信息详情界面  : public   activity</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">2015/8/8 13:22:17</td>
+			<td width="85%" class="ObjectDetailsValue">2015/8/8 12:42:03</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">2015/8/8 13:22:24</td>
+			<td class="ObjectDetailsValue">2015/8/8 12:45:47</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -57,7 +57,7 @@ function initPage(src) {
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E087C84C-C82B-41ed-AB1A-8630D7F1C453}</td>
+			<td class="ObjectDetailsValue">{73275E70-CB20-4fbc-93E5-94C0378F56DC}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
@@ -67,8 +67,34 @@ function initPage(src) {
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('FlowTo');" id="FlowToTitle">Flow To</li>
 			<li onClick="parent.toggleItem('FlowFrom');" id="FlowFromTitle">Flow From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Custom Properties</li>
 		</ul>
+		<div class="ItemBody" id="FlowToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="50%" class="TableHeading">Element</td>
+					<td width="50%" class="TableHeading">Name</td>
+				</tr>
+				<tr>
+					<td width="50%" class="TableRow" valign="top">
+						<a href="EA83.htm">点击分享招聘信息按钮</a><br />
+						Action &nbsp;
+					</td>
+					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="2">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow290" onclick="parent.toggleDiv('detailsDIVLinkFlow290', 'DetailsImageLinkFlow290')" />Details:
+							<div id="detailsDIVLinkFlow290" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
 		<div class="ItemBody" id="FlowFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -77,60 +103,15 @@ function initPage(src) {
 				</tr>
 				<tr>
 					<td width="50%" class="TableRow" valign="top">
-						<a href="EA88.htm">该招聘信息是否已过期</a><br />
+						<a href="EA89.htm">该招聘信息是否已过期</a><br />
 						Decision &nbsp;
 					</td>
 					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="2">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow301" onclick="parent.toggleDiv('detailsDIVLinkFlow301', 'DetailsImageLinkFlow301')" />Details:
-							<div id="detailsDIVLinkFlow301" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>				<tr>
-					<td width="50%" class="TableRow" valign="top">
-						<a href="EA89.htm">将该次分享记入分红模块中</a><br />
-						Activity &nbsp;
-					</td>
-					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="2">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow302" onclick="parent.toggleDiv('detailsDIVLinkFlow302', 'DetailsImageLinkFlow302')" />Details:
-							<div id="detailsDIVLinkFlow302" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>				<tr>
-					<td width="50%" class="TableRow" valign="top">
-						<a href="EA87.htm">告知用户此次分享失败</a><br />
-						Activity &nbsp;
-					</td>
-					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="2">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow303" onclick="parent.toggleDiv('detailsDIVLinkFlow303', 'DetailsImageLinkFlow303')" />Details:
-							<div id="detailsDIVLinkFlow303" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>				<tr>
-					<td width="50%" class="TableRow" valign="top">
-						<a href="EA94.htm">想继续玩？</a><br />
-						Decision &nbsp;
-					</td>
-					<td width="50%" class="TableRow" valign="top">&nbsp;</td>					
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="2">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow304" onclick="parent.toggleDiv('detailsDIVLinkFlow304', 'DetailsImageLinkFlow304')" />Details:
-							<div id="detailsDIVLinkFlow304" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLinkFlow291" onclick="parent.toggleDiv('detailsDIVLinkFlow291', 'DetailsImageLinkFlow291')" />Details:
+							<div id="detailsDIVLinkFlow291" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -138,7 +119,20 @@ function initPage(src) {
 				</tr>
 			</table>
 		</div>
-	</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isReadOnly:</td>
+				<td width="70%" class="TableRow">false</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
 <div class="pageFooter"></div>
  
 </body>
