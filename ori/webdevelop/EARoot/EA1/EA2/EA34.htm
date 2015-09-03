@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>修改或撤销招聘信息</title>
+<title>简历管理(APP)</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {
@@ -16,15 +16,15 @@ function initPage(src) {
 <body onload="initPage(this);" class="Content">
 <div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">修改或撤销招聘信息  : public  &lt;&lt;business use case&gt;&gt; usecase</span>
+	<span class="ObjectTitle">简历管理(APP)  : public  &lt;&lt;business use case&gt;&gt; usecase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">2015/7/21 22:59:45</td>
+			<td width="85%" class="ObjectDetailsValue">2015/8/7 1:01:25</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">2015/8/6 21:35:01</td>
+			<td class="ObjectDetailsValue">2015/8/8 13:13:32</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -57,17 +57,19 @@ function initPage(src) {
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E216D9CA-CEA4-4d4d-BBF1-AABFEF3E38B5}</td>
+			<td class="ObjectDetailsValue">{6D1690F2-014F-44f3-8BB6-F1C0FB3BFCC1}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="../EA2.htm">全局用例视图</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">&#24212;&#32856;&#32773;&#21487;&#20197;&#22312;APP&#19978;&#26356;&#26032;&#25110;&#21024;&#38500;&#20182;&#30340;&#31616;&#21382;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
@@ -79,7 +81,7 @@ function initPage(src) {
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA1/EA1/EA15.htm">招聘信息管理</a><br />
+						<a href="../EA1/EA1/EA12.htm">简历管理</a><br />
 						Actor &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -93,8 +95,41 @@ function initPage(src) {
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink80" onclick="parent.toggleDiv('detailsDIVLink80','DetailsImageLink80')" />Details:
-							<div id="detailsDIVLink80" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink67" onclick="parent.toggleDiv('detailsDIVLink67','DetailsImageLink67')" />Details:
+							<div id="detailsDIVLink67" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA1/EA2/EA19.htm">«business actor» 应聘者</a><br />
+						Actor &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink68" onclick="parent.toggleDiv('detailsDIVLink68','DetailsImageLink68')" />Details:
+							<div id="detailsDIVLink68" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -112,9 +147,9 @@ function initPage(src) {
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA29.htm">«business use case» 管理招聘信息</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA36.htm">«business use case» APP端登录</a></td>
 					<td width="15%" class="TableRow" valign="top">UseCase</td>
-					<td width="15%" class="TableRow" valign="top">Extends</td>
+					<td width="15%" class="TableRow" valign="top">Includes</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
